@@ -1,0 +1,51 @@
+@mixin responsivi(){
+    @media screen and (max-width: 640px){
+        @content;
+    }
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: $Dark-Blue;
+
+    @include responsivi(){
+        font-size: 56px;
+    }
+}
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: $Dark-Blue;
+    @include responsivi(){
+        font-size: 40px;
+    }
+}
+h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: $Dark-Blue;
+
+    @include responsivi(){
+        font-size: 24px;
+    }
+}
+h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: $Dark-Blue;
+
+    @include responsivi(){
+        font-size: 16px;
+    }
+}
+
+p{
+    font-size: 18px;
+    font-weight: 400;
+    color: $Grayish-Blue;
+
+    @include responsivi(){
+        font-size: 16px;
+    } 
+}
