@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
+  font-family: "Public sans", sans-serif;
   /* Margin */
   /* Padding */
+  background-color: hsl(0, 0%, 98%);
 }
 body .m-0 {
   margin: 0;
@@ -238,4 +244,61 @@ body p {
   body p {
     font-size: 16px;
   }
+}
+body .btn {
+  padding: 16px 32px;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: hsl(0, 0%, 100%);
+  border-radius: 32px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+body .btn:hover {
+  opacity: 0.8;
+}
+body header {
+  width: 100%;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  padding: 16px 0;
+}
+body header .navbar-desktop {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .navbar-desktop nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+body header .navbar-desktop nav ul a {
+  position: relative;
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+  padding: 16px 0;
+}
+body header .navbar-desktop nav ul a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: hsl(136, 65%, 51%);
+  transition: 0.3s ease;
+}
+body header .navbar-desktop nav ul a:hover::after {
+  width: 100%;
+}
+body header .navbar-mobile {
+  display: none;
+}
+body header .menu-mobile {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
