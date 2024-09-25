@@ -261,7 +261,7 @@ body header {
   width: 100%;
   display: flex;
   background-color: hsl(0, 0%, 100%);
-  padding: 16px 0;
+  padding: 24px 16px;
 }
 body header .navbar-desktop {
   width: 100%;
@@ -296,9 +296,68 @@ body header .navbar-desktop nav ul a::after {
 body header .navbar-desktop nav ul a:hover::after {
   width: 100%;
 }
+@media screen and (max-width: 640px) {
+  body header .navbar-desktop {
+    display: none;
+  }
+}
 body header .navbar-mobile {
   display: none;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 640px) {
+  body header .navbar-mobile {
+    display: flex;
+  }
+}
+body header .navbar-mobile .hamburguer {
+  cursor: pointer;
+}
+body header .navbar-mobile .close {
+  display: none;
+  cursor: pointer;
 }
 body header .menu-mobile {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  padding: 24px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4px;
+}
+body header .menu-mobile nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+body header .menu-mobile nav ul a {
+  position: relative;
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+  padding: 16px 0;
+  font-size: 1.5rem;
+}
+body header .menu-mobile nav ul a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: hsl(136, 65%, 51%);
+  transition: 0.3s ease;
+}
+body header .menu-mobile nav ul a:hover::after {
+  width: 100%;
+}
+body header .active {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
