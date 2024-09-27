@@ -105,19 +105,19 @@ body .ml5 {
 body .mr5 {
   margin-right: 2.5rem;
 }
-body .p-0 {
+body .p0 {
   padding: 0;
 }
-body .pt-0 {
+body .pt0 {
   padding-top: 0;
 }
-body .pb-0 {
+body .pb0 {
   padding-bottom: 0;
 }
-body .pl-0 {
+body .pl0 {
   padding-left: 0;
 }
-body .pr-0 {
+body .pr0 {
   padding-right: 0;
 }
 body .p1 {
@@ -165,7 +165,7 @@ body .pl3 {
 body .pr3 {
   padding-right: 1.5rem;
 }
-body .p-4 {
+body .p4 {
   padding: 2rem;
 }
 body .pt4 {
@@ -360,4 +360,40 @@ body header .menu-mobile nav ul a:hover::after {
 }
 body header .active {
   display: flex;
+}
+body main {
+  position: relative;
+  overflow: hidden;
+}
+body .hero {
+  width: 100%;
+  height: 84vh;
+  padding-left: 132px;
+  background-color: hsl(220, 16%, 96%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+}
+body .hero .hero-text h1 {
+  font-weight: 400;
+}
+body .hero .hero-img {
+  overflow: hidden;
+  width: 140%;
+  height: 130%;
+  background: url("../../images/bg-intro-desktop.svg") no-repeat center;
+  background-size: cover;
+  z-index: 999;
+}
+body .hero .hero-img img {
+  position: absolute;
+  width: 800px;
+  height: 1000px;
+}
+body .teste {
+  height: 2000px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
